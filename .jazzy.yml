@@ -1,9 +1,0 @@
-author: CypherPoet
-author_url: https://github.com/CypherPoet
-copyright: Copyright 2020 CypherPoet
-github_url: https://github.com/CypherPoet/SwiftUIPolygon
-swift_build_tool: spm
-clean: true
-output: ./Documentation
-swift_version: 5.1.3
-min_acl: internal
