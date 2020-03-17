@@ -31,16 +31,17 @@ extension Example1: View {
         List {
             Section {
                 polygonShape
-                    .fill(isShapeFilled ? Color.red : Color.clear)
+                    .fill(isShapeFilled ? Color.orange : Color.clear)
                     .overlay(
                         polygonShape
-                            .stroke(Color.purple, style: StrokeStyle(lineWidth: strokeWidth))
+                            .stroke(Color.purple, lineWidth: strokeWidth)
                     )
                     .animation(.easeOut(duration: 0.3))
                     .padding()
 
             }
             .frame(height: 300)
+            .clipped()
 
             controls
         }
@@ -66,6 +67,7 @@ extension Example1 {
         )
     }
 
+    
     private var controls: some View {
         Group {
             Section(header: Text("")) {
@@ -120,21 +122,26 @@ extension Example1 {
                     ) { Text("Stroke Width") }
                 }
             }
-            .listRowInsets(.init(top: 12, leading: 10, bottom: 12, trailing: 10))
-
 
             Section(header: Text("")) {
-                VStack {
-                    EmptyView()
-//                    Toggle(isOn: $drawAsMesh) {
-//                        Text("Draw As Mesh")
-//                    }
-//                    Toggle(isOn: $isShapeFilled) {
-//                        Text("Apply Fill")
-//                    }
+                HStack {
+                    Spacer()
+                    Picker(selection: $meshRenderingMode, label: Text("Rendering Mode")) {
+                        ForEach(Polygon.MeshRenderingMode.allCases) { renderingMode in
+                            Text(renderingMode.displayText).tag(renderingMode)
+                        }
+                    }
+                    Spacer()
+                }
+                
+                Toggle(isOn: $isShapeFilled) {
+                    Text("Fill Shape")
                 }
             }
+            .pickerStyle(SegmentedPickerStyle())
         }
+        .listRowInsets(.init(top: 12, leading: 24, bottom: 12, trailing: 24))
+
     }
 }
 
@@ -149,8 +156,6 @@ private extension Example1 {
 struct Example1_Previews: PreviewProvider {
 
     static var previews: some View {
-        NavigationView {
-            Example1()
-        }
+        Example1()
     }
 }
