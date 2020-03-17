@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Burritos",
+        "repositoryURL": "https://github.com/guillermomuntaner/Burritos",
+        "state": {
+          "branch": null,
+          "revision": "309dbe1b5b3af8839ca6a7ebb2ad6ddf041bf420",
+          "version": "0.0.3"
+        }
+      },
+      {
+        "package": "CypherPoetMathUtils",
+        "repositoryURL": "https://github.com/CypherPoet/CypherPoetMathUtils.git",
+        "state": {
+          "branch": null,
+          "revision": "44f634e89fb55bd75b8a4426df18a212cd01b04a",
+          "version": "0.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
