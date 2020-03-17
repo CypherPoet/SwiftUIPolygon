@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Polygon Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Polygon" class="dashAnchor"></a>
+    <a title="Polygon Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (45% documented)</p>
+        <p class="header-right"><a href="https://github.com/CypherPoet/SwiftUIPolygon"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Polygon Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Polygon.html">Polygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Polygon/MeshRenderingMode.html">– MeshRenderingMode</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Polygon</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Polygon</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Polygon</span><span class="p">:</span> <span class="kt">Animatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Polygon</span><span class="p">:</span> <span class="kt">Shape</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7PolygonAAV5sidesSivp"></a>
+                    <a name="//apple_ref/swift/Property/sides" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7PolygonAAV5sidesSivp">sides</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of sides belonging to the polygon.</p>
+
+<p>This value must be greater than or equal to 1.
+If a value less than 1 is set, it will be clamped to 1 automatically.</p>
+
+<p>Polygons with 1 or 2 sides will be rendered as a circle.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Clamping</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">sides</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7PolygonAAV5scale12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/scale" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7PolygonAAV5scale12CoreGraphics7CGFloatVvp">scale</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default: 1</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scale</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7PolygonAAV13renderingModeAB013MeshRenderingC0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/renderingMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7PolygonAAV13renderingModeAB013MeshRenderingC0Ovp">renderingMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default: <code>face</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">renderingMode</span><span class="p">:</span> <span class="kt"><a href="../Structs/Polygon/MeshRenderingMode.html">MeshRenderingMode</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7PolygonAAV5sides5scale13renderingModeABSi_12CoreGraphics7CGFloatVAB013MeshRenderingE0Otcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(sides:scale:renderingMode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7PolygonAAV5sides5scale13renderingModeABSi_12CoreGraphics7CGFloatVAB013MeshRenderingE0Otcfc">init(sides:scale:renderingMode:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">sides</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nv">scale</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nv">renderingMode</span><span class="p">:</span> <span class="kt"><a href="../Structs/Polygon/MeshRenderingMode.html">MeshRenderingMode</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">face</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7PolygonAAV17MeshRenderingModeO"></a>
+                    <a name="//apple_ref/swift/Enum/MeshRenderingMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7PolygonAAV17MeshRenderingModeO">MeshRenderingMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Polygon/MeshRenderingMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MeshRenderingMode</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/Polygon.html">Polygon</a></span><span class="o">.</span><span class="kt">MeshRenderingMode</span><span class="p">:</span> <span class="kt">CaseIterable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/Polygon.html">Polygon</a></span><span class="o">.</span><span class="kt">MeshRenderingMode</span><span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AnimatableData"></a>
+                <a name="//apple_ref/swift/Section/AnimatableData" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/AnimatableData"></a>
+                  <h3 class="section-name"><p>AnimatableData</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI10AnimatableP14animatableData0cE0Qzvp"></a>
+                    <a name="//apple_ref/swift/Property/animatableData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI10AnimatableP14animatableData0cE0Qzvp">animatableData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">animatableData</span><span class="p">:</span> <span class="kt">AnimatablePair</span><span class="o">&lt;</span><span class="kt">CGFloat</span><span class="p">,</span> <span class="kt">CGFloat</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Shape"></a>
+                <a name="//apple_ref/swift/Section/Shape" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shape"></a>
+                  <h3 class="section-name"><p>Shape</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI5ShapeP4path2inAA4PathVSo6CGRectV_tF"></a>
+                    <a name="//apple_ref/swift/Method/path(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI5ShapeP4path2inAA4PathVSo6CGRectV_tF">path(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">path</span><span class="p">(</span><span class="k">in</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Path</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computeds"></a>
+                <a name="//apple_ref/swift/Section/Computeds" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Computeds"></a>
+                  <h3 class="section-name"><p>Computeds</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7PolygonAAV11sidesToDrawSivp"></a>
+                    <a name="//apple_ref/swift/Property/sidesToDraw" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7PolygonAAV11sidesToDrawSivp">sidesToDraw</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>As the decimal part of the newest side grows, this side will go from zero to its full length.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sidesToDraw</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7PolygonAAV10hypotenuse2in12CoreGraphics7CGFloatVSo6CGRectV_tF"></a>
+                    <a name="//apple_ref/swift/Method/hypotenuse(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7PolygonAAV10hypotenuse2in12CoreGraphics7CGFloatVSo6CGRectV_tF">hypotenuse(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A hypotenuse computed to fit inside the available rect</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hypotenuse</span><span class="p">(</span><span class="k">in</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7PolygonAAV6center2inSo7CGPointVSo6CGRectV_tF"></a>
+                    <a name="//apple_ref/swift/Method/center(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7PolygonAAV6center2inSo7CGPointVSo6CGRectV_tF">center(in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">center</span><span class="p">(</span><span class="k">in</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGPoint</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright 2020 CypherPoet</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
