@@ -139,19 +139,3 @@ extension Polygon {
         drawMeshLines(path: &path, vertices: vertices, startingVertexIndex: startingVertexIndex + 1)
     }
 }
-
-
-// MARK: - Rendering Mode
-extension Polygon {
-    
-    public enum MeshRenderingMode {
-        
-        /// Draws only the edges that comprise the outer contour of the shape, thus rendering the "face".
-        case face
-        
-        /// Draws all edges that connect each vertex of the polygon's inner triangles.
-        ///
-        /// [🔗 More Info](https://en.wikipedia.org/wiki/Wire-frame_model)
-        case wireframe
-    }
-}
