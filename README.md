@@ -1,6 +1,11 @@
 # SwiftUIPolygon
 
-<p>
+<p align="center">
+   <img width="800" src="https://raw.githubusercontent.com/CypherPoet/SwiftUIPolygon/master/Assets/logo.png" alt="SwiftUIPolygon Header Logo">
+</p>
+
+
+<p align="center">
     <img src="https://img.shields.io/badge/Swift-5.1-F06C33.svg" />
     <img src="https://img.shields.io/badge/iOS-13.0+-865EFC.svg" />
     <img src="https://img.shields.io/badge/iPadOS-13.0+-F65EFC.svg" />
@@ -23,12 +28,6 @@ _An animatable SwiftUI Polygon Shape with support for mesh rendering._
 
 <p />
 
-<!--
-
-[[ Header Screenshot ]]
-![](/Assets/Screenshots/header.png)
-
- -->
 
 
 ## Features

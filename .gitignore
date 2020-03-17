@@ -109,3 +109,6 @@ fastlane/test_output
 iOSInjectionProject/
 
 # End of https://www.gitignore.io/api/macos,swift
+
+
+Assets/**/*.ai
