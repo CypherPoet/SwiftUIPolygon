@@ -1,0 +1,72 @@
+opt_in_rules:
+  - force_unwrapping
+  - empty_count
+  - contains_over_first_not_nil
+  - fatal_error_message
+  - first_where
+  - number_separator
+  - operator_usage_whitespace
+  - trailing_closure
+  - toggle_bool
+  - convenience_type
+  - empty_string
+  - fallthrough
+  - function_default_parameter_at_end
+  - legacy_random
+  - multiline_function_chains
+  - multiline_parameters
+  - pattern_matching_keywords
+  - private_outlet
+  - private_action
+  - redundant_type_annotation
+  - sorted_first_last
+  - strict_fileprivate
+  - syntactic_sugar
+  - unneeded_parentheses_in_closure_argument
+  - modifier_order
+  - yoda_condition
+
+
+disabled_rules: # rule identifiers to exclude from running
+- vertical_whitespace
+- trailing_whitespace
+
+included: # paths to include during linting. `--path` is ignored if present.
+- Sources
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - Carthage
+
+function_parameter_count:
+  warning: 4
+  error: 5
+
+line_length:
+  ignores_function_declarations: true
+  ignores_comments: true
+
+type_body_length:
+  warning: 300
+  error: 400
+
+file_length:
+  warning: 500
+  error: 600
+
+large_tuple: # warn user when using 3 values in tuple, give error if there are 4
+  warning: 3
+  error: 4
+
+identifier_name:
+  excluded:
+    - id
+
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 30
+    error: 35
+  excluded: Ids
+
+reporter: "xcode"
