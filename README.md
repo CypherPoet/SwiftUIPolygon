@@ -1,7 +1,7 @@
 # SwiftUIPolygon
 
 <p align="center">
-   <img width="800" src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Logo/Exports/logo.png" alt="SwiftUIPolygon Header Logo">
+   <img width="600" src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Logo/Exports/logo.png" alt="SwiftUIPolygon Header Logo">
 </p>
 
 
@@ -12,7 +12,6 @@
     <img src="https://img.shields.io/badge/macOS-10.15+-179AC8.svg" />
     <img src="https://img.shields.io/badge/tvOS-13.0+-41465B.svg" />
     <img src="https://img.shields.io/badge/watchOS-6.0+-1FD67A.svg" />
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
     <a href="https://github.com/apple/swift-package-manager">
       <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" />
     </a>
@@ -21,20 +20,31 @@
     </a>
 </p>
 
+<br/>
 
 <p align="center">
+  _An animatable SwiftUI Polygon Shape with support for mesh rendering._
+</p>
 
-_An animatable SwiftUI Polygon Shape with support for mesh rendering._
+<br/>
 
-<p />
+<p align="center">
+   <img src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Screenshots/demo-1.gif" width="400px" alt="Demo">
+</p>
+
+<br/>
+
+<p align="center">
+  - 🔗Clone or download this repo and play around with the [Demo app](./Demo/).
+</p>
 
 
 
 ## Features
 
-- [x] Shape animation support for scale and side count.
+- [x] Shape animation support for side counts.
 - [x] Mesh Rendering
-- [x] Configurable side counts, scale, and rendering modes.
+- [x] Configurable side counts and rendering modes.
 
 
 
@@ -51,6 +61,12 @@ _An animatable SwiftUI Polygon Shape with support for mesh rendering._
 
 ## Installation
 
+### Xcode Projects
+
+Using Xcode, select `File` -> `Swift Packages` -> `Add Package Dependency` and enter https://github.com/CypherPoet/SwiftUIPolygon.
+
+### Swift Package Manager
+
 `SwiftUIPolygon` can be used through the Swift Package Manager. You can add it as a dependency in your `Package.swift` file:
 
 ```swift
@@ -64,6 +80,55 @@ let package = Package(
 ```
 
 From there, you can `import Polygon` wherever you'd like to use it.
+
+
+## Usage
+
+```swift
+Polygon(
+    sides: 8,
+    renderingMode: .wireframe
+)
+```
+
+### Configurable Properties
+
+#### sides (`Int`)
+
+The number of sides belonging to the polygon.
+
+This value must be greater than or equal to 1.
+If a value less than 1 is set, it will be clamped to 1 automatically.
+
+> Polygons with 1 or 2 sides will be rendered as a circle.
+
+- **default**: 3
+
+
+#### renderingMode (`Polygon.MeshRenderingMode`)
+
+An enum type of either `face` or `wireframe`.
+
+- **default**: face
+
+
+### Recipes
+
+#### Stroking and filling the same shape
+
+```swift
+Polygon(sides: 5)
+    .fill(Color.orange)
+    .overlay(
+        polygonShape
+            .stroke(Color.purple, lineWidth: 8)
+    )
+```
+
+<p align="center">
+   <img src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Screenshots/stroke-and-fill.png" width="400px" alt="Stroke & Fill">
+</p>
+
 
 
 ## Roadmap

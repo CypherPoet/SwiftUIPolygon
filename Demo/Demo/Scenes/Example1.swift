@@ -12,7 +12,7 @@ import Polygon
 
 struct Example1 {
 
-    private let sideCountRange: ClosedRange<CGFloat> = ClosedRange(uncheckedBounds: (lower: 0, upper: 30))
+    private let sideCountRange: ClosedRange<CGFloat> = ClosedRange(uncheckedBounds: (lower: 1, upper: 30))
     private let scaleRange: ClosedRange<CGFloat> = ClosedRange(uncheckedBounds: (lower: 0.1, upper: 4))
     private let strokeWidthRange: ClosedRange<CGFloat> = ClosedRange(uncheckedBounds: (lower: 1, upper: 14))
 
