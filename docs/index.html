@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (45% documented)</p>
+        <p><a href="index.html"> Docs</a> (42% documented)</p>
         <p class="header-right"><a href="https://github.com/CypherPoet/SwiftUIPolygon"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -65,7 +65,6 @@
     <img src="https://img.shields.io/badge/macOS-10.15+-179AC8.svg" />
     <img src="https://img.shields.io/badge/tvOS-13.0+-41465B.svg" />
     <img src="https://img.shields.io/badge/watchOS-6.0+-1FD67A.svg" />
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
     <a href="https://github.com/apple/swift-package-manager">
       <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" />
     </a>
@@ -94,9 +93,9 @@
 <h2 id='features' class='heading'>Features</h2>
 
 <ul>
-<li>[x] Shape animation support for scale and side count.</li>
+<li>[x] Shape animation support for side counts.</li>
 <li>[x] Mesh Rendering</li>
-<li>[x] Configurable side counts, scale, and rendering modes.</li>
+<li>[x] Configurable side counts and rendering modes.</li>
 </ul>
 <h2 id='requirements' class='heading'>Requirements</h2>
 
@@ -109,6 +108,10 @@
 <li>Xcode 11.3+ (for developing)</li>
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
+<h3 id='xcode-projects' class='heading'>Xcode Projects</h3>
+
+<p>Using Xcode, select <code>File</code> -&gt; <code>Swift Packages</code> -&gt; <code>Add Package Dependency</code> and enter <a href="https://github.com/CypherPoet/SwiftUIPolygon">https://github.com/CypherPoet/SwiftUIPolygon</a>.</p>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
 
 <p><code>SwiftUIPolygon</code> can be used through the Swift Package Manager. You can add it as a dependency in your <code>Package.swift</code> file:</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
@@ -121,6 +124,47 @@
 </code></pre>
 
 <p>From there, you can <code>import Polygon</code> wherever you&rsquo;d like to use it.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+<pre class="highlight swift"><code><span class="kt">Polygon</span><span class="p">(</span>
+    <span class="nv">sides</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+    <span class="nv">renderingMode</span><span class="p">:</span> <span class="o">.</span><span class="n">wireframe</span>
+<span class="p">)</span>
+</code></pre>
+<h3 id='configurable-properties' class='heading'>Configurable Properties</h3>
+<h4 id='sides-code-int-code' class='heading'>sides (<code>Int</code>)</h4>
+
+<p>The number of sides belonging to the polygon.</p>
+
+<p>This value must be greater than or equal to 1.
+If a value less than 1 is set, it will be clamped to 1 automatically.</p>
+
+<blockquote>
+<p>Polygons with 1 or 2 sides will be rendered as a circle.</p>
+</blockquote>
+
+<ul>
+<li><strong>default</strong>: 3</li>
+</ul>
+<h4 id='renderingmode-code-polygon-meshrenderingmode-code' class='heading'>renderingMode (<code><a href="Structs/Polygon/MeshRenderingMode.html">Polygon.MeshRenderingMode</a></code>)</h4>
+
+<p>An enum type of either <code>face</code> or <code>wireframe</code>.</p>
+
+<ul>
+<li><strong>default</strong>: face</li>
+</ul>
+<h3 id='recipes' class='heading'>Recipes</h3>
+<h4 id='stroking-and-filling-the-same-shape' class='heading'>Stroking and filling the same shape</h4>
+<pre class="highlight swift"><code><span class="kt">Polygon</span><span class="p">(</span><span class="nv">sides</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">fill</span><span class="p">(</span><span class="kt">Color</span><span class="o">.</span><span class="n">orange</span><span class="p">)</span>
+    <span class="o">.</span><span class="nf">overlay</span><span class="p">(</span>
+        <span class="n">polygonShape</span>
+            <span class="o">.</span><span class="nf">stroke</span><span class="p">(</span><span class="kt">Color</span><span class="o">.</span><span class="n">purple</span><span class="p">,</span> <span class="nv">lineWidth</span><span class="p">:</span> <span class="mi">8</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre>
+
+<p align="center">
+   <img src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Screenshots/stroke-and-fill.png" width="400px" alt="Stroke & Fill">
+</p>
 <h2 id='roadmap' class='heading'>Roadmap</h2>
 
 <ul>

@@ -58,28 +58,28 @@
     },
     {
       "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
-      "line": 29,
-      "symbol": "Polygon.init(sides:scale:renderingMode:)",
+      "line": 26,
+      "symbol": "Polygon.init(sides:renderingMode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
-      "line": 44,
+      "line": 39,
       "symbol": "Polygon",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
-      "line": 57,
+      "line": 51,
       "symbol": "Polygon",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
-      "line": 110,
+      "line": 104,
       "symbol": "Polygon",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
