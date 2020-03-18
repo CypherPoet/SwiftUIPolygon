@@ -1,87 +1,87 @@
 {
   "warnings": [
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon+MeshRenderingMode.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Extensions/CGRect+Utils.swift",
+      "line": 5,
+      "symbol": "CGRect.center",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon+MeshRenderingMode.swift",
       "line": 5,
       "symbol": "Polygon.MeshRenderingMode",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon+MeshRenderingMode.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon+MeshRenderingMode.swift",
       "line": 18,
       "symbol": "Polygon.MeshRenderingMode",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon+MeshRenderingMode.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon+MeshRenderingMode.swift",
       "line": 20,
       "symbol": "Polygon.MeshRenderingMode",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon+MeshRenderingMode.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon+MeshRenderingMode.swift",
       "line": 25,
       "symbol": "Polygon.MeshRenderingMode",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon+MeshRenderingMode.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon+MeshRenderingMode.swift",
       "line": 27,
       "symbol": "Polygon.MeshRenderingMode.displayText",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
       "line": 3,
       "symbol": "Polygon",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
       "line": 7,
       "symbol": "Polygon",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
       "line": 29,
       "symbol": "Polygon.init(sides:scale:renderingMode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
       "line": 44,
       "symbol": "Polygon",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon.swift",
-      "line": 59,
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
+      "line": 57,
       "symbol": "Polygon",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon.swift",
-      "line": 98,
-      "symbol": "Polygon",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Shapes/Polygon.swift",
+      "file": "/Users/briansipple/Projects/swift/Packages/SwiftUIPolygon/Sources/Polygon.swift",
       "line": 110,
-      "symbol": "Polygon.center(in:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "symbol": "Polygon",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     }
   ],
