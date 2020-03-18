@@ -1,7 +1,7 @@
 # SwiftUIPolygon
 
 <p align="center">
-   <img width="800" src="https://raw.githubusercontent.com/CypherPoet/SwiftUIPolygon/master/Assets/logo.png" alt="SwiftUIPolygon Header Logo">
+   <img width="800" src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Logo/Exports/logo.png" alt="SwiftUIPolygon Header Logo">
 </p>
 
 
