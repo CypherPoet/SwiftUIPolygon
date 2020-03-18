@@ -1,7 +1,7 @@
 import Foundation
 import XCTest
 
-@testable import SwiftUIPolygon_Polygon
+@testable import Polygon
 
 
 final class PolygonTests: XCTestCase {
@@ -16,8 +16,8 @@ extension PolygonTests {
     }
 
 
-    func makePolygon(sideCount: Int) -> Polygon {
-        .init(sideCount: sideCount)
+    func makePolygon(sides: Int) -> Polygon {
+        .init(sides: sides)
     }
 }
 
@@ -25,10 +25,10 @@ extension PolygonTests {
 // MARK: - Init
 extension PolygonTests {
 
-    func test_init_createPolygonWithDefaultSideCountOfThree() {
+    func test_init_createPolygonWithDefaultSidesOfThree() {
         let polygon = Polygon()
 
-        XCTAssertEqual(polygon.sideCount, 3)
+        XCTAssertEqual(polygon.sides, 3)
     }
 
 
@@ -39,21 +39,21 @@ extension PolygonTests {
     }
 
 
-    func test_init_withSideCount_clampsNumberOfSidesToALowerBoundOfOne() {
-        var sideCount = 0
-        var polygon = makePolygon(sideCount: sideCount)
+    func test_init_withSides_clampsNumberOfSidesToALowerBoundOfOne() {
+        var sides = 0
+        var polygon = makePolygon(sides: sides)
 
-        XCTAssertEqual(polygon.sideCount, 1)
+        XCTAssertEqual(polygon.sides, 1)
 
-        sideCount = -10
-        polygon = makePolygon(sideCount: sideCount)
+        sides = -10
+        polygon = makePolygon(sides: sides)
 
-        XCTAssertEqual(polygon.sideCount, 1)
+        XCTAssertEqual(polygon.sides, 1)
 
-        sideCount = 10
-        polygon = makePolygon(sideCount: sideCount)
+        sides = 10
+        polygon = makePolygon(sides: sides)
 
-        XCTAssertEqual(polygon.sideCount, 10)
+        XCTAssertEqual(polygon.sides, 10)
     }
 }
 
@@ -61,16 +61,16 @@ extension PolygonTests {
 // MARK: - Property Access
 extension PolygonTests {
 
-    func test_setSideCount_clampsNumberOfSidesToALowerBoundOfOne() {
-        var polygon = makePolygon(sideCount: 1)
+    func test_setSides_clampsNumberOfSidesToALowerBoundOfOne() {
+        var polygon = makePolygon(sides: 1)
 
-        XCTAssertEqual(polygon.sideCount, 1)
+        XCTAssertEqual(polygon.sides, 1)
 
-        polygon.sideCount = -10
-        XCTAssertEqual(polygon.sideCount, 1)
+        polygon.sides = -10
+        XCTAssertEqual(polygon.sides, 1)
 
-        polygon.sideCount = 10
+        polygon.sides = 10
 
-        XCTAssertEqual(polygon.sideCount, 10)
+        XCTAssertEqual(polygon.sides, 10)
     }
 }

@@ -45,6 +45,7 @@ extension Example1: View {
 
             controls
         }
+        .listRowInsets(.init(top: 12, leading: 24, bottom: 12, trailing: 24))
         .background(Color.gray)
         .navigationBarTitle("", displayMode: .inline)
     }
@@ -140,7 +141,7 @@ extension Example1 {
             }
             .pickerStyle(SegmentedPickerStyle())
         }
-        .listRowInsets(.init(top: 12, leading: 24, bottom: 12, trailing: 24))
+//        .listRowInsets(.init(top: 12, leading: 24, bottom: 12, trailing: 24))
 
     }
 }

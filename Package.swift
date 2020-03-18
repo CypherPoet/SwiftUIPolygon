@@ -22,7 +22,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/CypherPoet/CypherPoetMathUtils.git", .exact("0.0.3")),
+        .package(url: "https://github.com/CypherPoet/CypherPoetMathUtils.git", .exact("0.0.4")),
         .package(url: "https://github.com/guillermomuntaner/Burritos", .exact("0.0.3")),
     ],
     targets: [
@@ -34,14 +34,14 @@ let package = Package(
                 "Burritos",
                 "CypherPoetMathUtils",
             ],
-            path: "Sources/Shapes/"
+            path: "Sources/"
         ),
         .testTarget(
             name: "SwiftUIPolygon.PolygonTests",
             dependencies: [
                 "Polygon",
             ],
-            path: "Tests/Shapes/PolygonTests/"
+            path: "Tests/PolygonTests/"
         ),
     ]
 )
