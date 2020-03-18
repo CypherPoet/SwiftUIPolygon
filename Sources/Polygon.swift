@@ -15,9 +15,6 @@ public struct Polygon {
     @Clamping(range: 1...Int.max)
     public var sides: Int = 3
     
-    /// Default: 1
-    public var scale: CGFloat
-    
     /// Default: `face`
     public var renderingMode: MeshRenderingMode
     
@@ -28,11 +25,9 @@ public struct Polygon {
     
     public init(
         sides: Int = 3,
-        scale: CGFloat = 1,
         renderingMode: MeshRenderingMode = .face
     ) {
         self._sides.wrappedValue = sides
-        self.scale = scale
         self.renderingMode = renderingMode
         
         self.sideCountAsFloat = CGFloat(sides)
@@ -43,12 +38,11 @@ public struct Polygon {
 // MARK: - AnimatableData
 extension Polygon: Animatable {
 
-    public var animatableData: AnimatablePair<CGFloat, CGFloat> {
-        get { AnimatablePair(sideCountAsFloat, scale) }
+    public var animatableData: CGFloat {
+        get { sideCountAsFloat }
         
         set {
-            sideCountAsFloat = sides > 2 ? newValue.first : CGFloat(sides)
-            scale = newValue.second
+            sideCountAsFloat = sides > 2 ? newValue : CGFloat(sides)
         }
     }
 }
@@ -115,7 +109,7 @@ extension Polygon {
 
     /// A hypotenuse computed to fit inside the available rect
     func hypotenuse(in rect: CGRect) -> CGFloat {
-        (min(rect.size.width, rect.size.height) / 2.0) * scale
+        min(rect.size.width, rect.size.height) / 2.0
     }
 }
 

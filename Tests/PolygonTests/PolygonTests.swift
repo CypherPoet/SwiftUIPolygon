@@ -32,13 +32,6 @@ extension PolygonTests {
     }
 
 
-    func test_init_createPolygonWithDefaultScaleOfOne() {
-        let polygon = Polygon()
-
-        XCTAssertEqual(polygon.scale, 1)
-    }
-
-
     func test_init_withSides_clampsNumberOfSidesToALowerBoundOfOne() {
         var sides = 0
         var polygon = makePolygon(sides: sides)

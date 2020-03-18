@@ -16,9 +16,9 @@ struct Example1 {
     private let scaleRange: ClosedRange<CGFloat> = ClosedRange(uncheckedBounds: (lower: 0.1, upper: 4))
     private let strokeWidthRange: ClosedRange<CGFloat> = ClosedRange(uncheckedBounds: (lower: 1, upper: 14))
 
-    @State private var sideCount: CGFloat = 3
+    @State private var sideCount: CGFloat = 2
     @State private var scale: CGFloat = 1.0
-    @State private var strokeWidth: CGFloat = 3
+    @State private var strokeWidth: CGFloat = 2
     @State private var meshRenderingMode: Polygon.MeshRenderingMode = .face
     @State private var isShapeFilled = false
 }
@@ -36,11 +36,12 @@ extension Example1: View {
                         polygonShape
                             .stroke(Color.purple, lineWidth: strokeWidth)
                     )
+                    .scaleEffect(scale)
                     .animation(.easeOut(duration: 0.3))
                     .padding()
 
             }
-            .frame(height: 300)
+            .frame(height: 400)
             .clipped()
 
             controls
@@ -63,7 +64,6 @@ extension Example1 {
     private var polygonShape: some Shape {
         Polygon(
             sides: Int(sideCount),
-            scale: scale,
             renderingMode: meshRenderingMode
         )
     }
@@ -141,8 +141,6 @@ extension Example1 {
             }
             .pickerStyle(SegmentedPickerStyle())
         }
-//        .listRowInsets(.init(top: 12, leading: 24, bottom: 12, trailing: 24))
-
     }
 }
 
