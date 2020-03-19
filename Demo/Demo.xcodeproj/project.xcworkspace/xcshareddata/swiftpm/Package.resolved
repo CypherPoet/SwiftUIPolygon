@@ -9,15 +9,6 @@
           "revision": "309dbe1b5b3af8839ca6a7ebb2ad6ddf041bf420",
           "version": "0.0.3"
         }
-      },
-      {
-        "package": "CypherPoetMathUtils",
-        "repositoryURL": "https://github.com/CypherPoet/CypherPoetMathUtils.git",
-        "state": {
-          "branch": null,
-          "revision": "e390a39f5ff1881be8f96cc7fde8253fb7ea6c55",
-          "version": "0.0.4"
-        }
       }
     ]
   },

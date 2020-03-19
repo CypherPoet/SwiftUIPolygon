@@ -1,5 +1,4 @@
 import SwiftUI
-import CypherPoetMathUtils_Trig
 import Clamping
 
 
@@ -59,8 +58,7 @@ extension Polygon: Shape {
         var path = Path()
         var currentAngle = -Double.pi / 2
         
-        var currentVertex = point(
-            from: center,
+        var currentVertex = center.endpoint(
             atDistance: hypotenuse,
             inDirection: .radians(currentAngle)
         )
@@ -74,10 +72,8 @@ extension Polygon: Shape {
         
         // Draw lines to subsequent vertices
         for _ in (1 ..< sidesToDraw) {
-//            let angle = Double(index) * Double(2.0 * .pi / sideCountAsFloat)
             currentAngle += angleIncrement
-            currentVertex = point(
-                from: center,
+            currentVertex = center.endpoint(
                 atDistance: hypotenuse,
                 inDirection: .radians(currentAngle)
             )
