@@ -1,7 +1,7 @@
 # SwiftUIPolygon
 
 <p align="center">
-   <img width="600" src="./Assets/Logo/Exports/logo.png" alt="SwiftUIPolygon Header Logo">
+   <img width="600px" src="./Assets/Logo/Exports/logo.png" alt="SwiftUIPolygon Header Logo">
 </p>
 
 
