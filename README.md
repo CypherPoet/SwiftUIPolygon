@@ -23,7 +23,9 @@
 <br/>
 
 <p align="center">
+
   _An animatable SwiftUI Polygon Shape with support for mesh rendering._
+
 </p>
 
 <br/>
@@ -53,8 +55,6 @@
 - [x] Shape animation support for side counts.
 - [x] Mesh Rendering
 - [x] Configurable side counts and rendering modes.
-- 🔗Clone or download this repo and play around with the [Demo app](./Demo/).
-
 
 
 ## Requirements
