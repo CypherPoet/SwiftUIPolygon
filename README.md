@@ -1,7 +1,7 @@
 # SwiftUIPolygon
 
 <p align="center">
-   <img width="600" src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Logo/Exports/logo.png" alt="SwiftUIPolygon Header Logo">
+   <img width="600" src="./Assets/Logo/Exports/logo.png" alt="SwiftUIPolygon Header Logo">
 </p>
 
 
@@ -29,13 +29,21 @@
 <br/>
 
 <p align="center">
-   <img src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Screenshots/demo-1.gif" width="400px" alt="Demo">
+   <img src="./Assets/Screenshots/demo-1.gif" width="400px" alt="Demo">
+
+   <div>
+
+   - 🔗Clone or download this repo and play around with the [Demo app](./Demo/).
+
+   </div>
 </p>
 
 <br/>
 
 <p align="center">
-  - 🔗Clone or download this repo and play around with the [Demo app](./Demo/).
+
+  SwiftUIPolygon aims to provide a primitive `Shape` implementation that can be rendered as any n-sided polygon in its regular form -- with support for animating side-count changes in real time. As bonus, you can configure it to render just the face -- or render the inner edges for a "wireframe" effect.
+
 </p>
 
 
@@ -45,6 +53,7 @@
 - [x] Shape animation support for side counts.
 - [x] Mesh Rendering
 - [x] Configurable side counts and rendering modes.
+- 🔗Clone or download this repo and play around with the [Demo app](./Demo/).
 
 
 
@@ -126,7 +135,7 @@ Polygon(sides: 5)
 ```
 
 <p align="center">
-   <img src="https://github.com/CypherPoet/SwiftUIPolygon/blob/master/Assets/Screenshots/stroke-and-fill.png" width="400px" alt="Stroke & Fill">
+   <img src="./Assets/Screenshots/stroke-and-fill.png" width="400px" alt="Stroke & Fill">
 </p>
 
 
