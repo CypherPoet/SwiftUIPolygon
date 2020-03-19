@@ -1,7 +1,11 @@
-import Foundation
+import SwiftUI
 import XCTest
 
-@testable import Polygon
+
+@testable import SwiftUIPolygon
+
+
+typealias Polygon = SwiftUIPolygon.Polygon
 
 
 final class PolygonTests: XCTestCase {
@@ -11,13 +15,14 @@ final class PolygonTests: XCTestCase {
 // MARK: - Factories for setup
 extension PolygonTests {
 
+//    func makePolygon() -> SwiftUIPolygon.Polygon {
     func makePolygon() -> Polygon {
-        .init()
+        Polygon()
     }
 
 
     func makePolygon(sides: Int) -> Polygon {
-        .init(sides: sides)
+        Polygon(sides: sides)
     }
 }
 

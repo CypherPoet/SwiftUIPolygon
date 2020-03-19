@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import Polygon
+import SwiftUIPolygon
 
 
 struct Example1 {

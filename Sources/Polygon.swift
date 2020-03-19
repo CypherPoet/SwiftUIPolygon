@@ -3,7 +3,6 @@ import CypherPoetMathUtils_Trig
 import Clamping
 
 
-
 public struct Polygon {
         
     /// The number of sides belonging to the polygon.

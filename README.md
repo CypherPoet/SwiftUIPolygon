@@ -79,7 +79,7 @@ let package = Package(
 )
 ```
 
-From there, you can `import Polygon` wherever you'd like to use it.
+From there, you can `import SwiftUIPolygon` wherever you'd like to use it.
 
 
 ## Usage
